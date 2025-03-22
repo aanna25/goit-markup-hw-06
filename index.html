@@ -19,32 +19,126 @@
   <body>
     <header class="page-header">
       <div class="container header-container">
-        <nav class="page-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-name">Studio</span></a
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="logo-span">Studio</span></a
           >
-          <ul class="menu-nav">
-            <li>
-              <a class="contact-link current" href="./index.html">Studio</a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link current" href="./index.html">Studio</a>
             </li>
-            <li><a class="contact-link" href="">Portfolio</a></li>
-            <li><a class="contact-link" href="">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address class="address-section">
-          <ul class="menu-nav">
-            <li>
-              <a class="address-link" href="mailto:info@devstudio.com"
+
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="address-link" href="tel:+110001111111"
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-custom-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link current"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -55,7 +149,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container features-container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list">
@@ -109,9 +203,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section-team">
+      <!-- <section class="section-team">
         <div class="container">
           <h2 class="section-name">Our Team</h2>
           <ul class="team-card">
@@ -332,9 +426,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-name">Our Portfolio</h2>
           <ul class="portfolio-card">
@@ -436,9 +530,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container">
         <div class="footer-content">
           <a href="./index.html" class="logo-footer"
@@ -506,9 +600,9 @@
         </div>
       </div>
     </footer>
-    <!-- modal form -->
+     -->
 
-    <div class="backdrop is-visible">
+    <!-- <div class="backdrop is-visible">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-custom-btn" width="8" height="8">
@@ -613,6 +707,6 @@
           <button type="submit" class="submit-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
