@@ -929,13 +929,81 @@ img {
 
 @media screen and (min-width: 768px) {
   .page-footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    column-gap: 24px;
+    padding: 0 108px;
   }
 
   .footer-content {
+    align-items: start;
+    width: calc(50% - 12px);
+  }
+
+  .social-media {
+    width: calc(50% - 12px);
+    align-items: start;
+  }
+
+  .subscribe {
+    align-items: start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    column-gap: 24px;
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .page-footer {
+    padding: 100px 0;
+  }
+
+  .page-footer .container {
+    padding: 0 16px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-content {
+    flex: 1;
+    min-width: 264px;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .social-media {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 60px;
+    margin-left: 80px;
+  }
+
+  .subscribe {
+    min-width: 300px;
+    margin-left: auto;
+  }
+
+  .page-footer .social-icon {
+    fill: #f4f4fd;
+  }
+
+  .page-footer .social-link:hover,
+  .page-footer .social-link:focus {
+    background-color: #31d0aa;
+  }
+
+  .subscribe-btn:hover,
+  .subscribe-btn:focus {
+    background-color: #404bbf;
+  }
 }
 
 /* end footer */
+
+/* modal form */
+
+/*end modal form */
