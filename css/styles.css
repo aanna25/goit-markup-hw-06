@@ -1181,7 +1181,7 @@ img {
   cursor: pointer;
 }
 
-.callback-label-accept {
+.callback-label-accept:last-child {
   display: flex;
   align-items: center;
 }
@@ -1250,21 +1250,20 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-}
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
 
-.modal {
-  padding: 72px 24px 24px 24px;
-  width: 408px;
-  min-height: 584px;
-}
+  .callback-input {
+    width: 360px;
+    height: 40px;
+  }
 
-.callback-input {
-  width: 360px;
-  height: 40px;
-}
-
-.callback-comment {
-  width: 360px;
+  .callback-comment {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
