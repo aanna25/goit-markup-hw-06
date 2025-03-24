@@ -294,7 +294,7 @@ img {
   color: #404bbf;
 }
 
-.social-list {
+.mobile-menu .social-list {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -302,7 +302,7 @@ img {
   padding: 0;
 }
 
-.social-link {
+.mobile-menu .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -941,6 +941,10 @@ img {
     width: calc(50% - 12px);
   }
 
+  .subscribe-user-input {
+    width: 264px;
+  }
+
   .social-media {
     width: calc(50% - 12px);
     align-items: start;
@@ -1187,9 +1191,10 @@ img {
 }
 
 .callback-form-custom-checkbox {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   fill: transparent;
